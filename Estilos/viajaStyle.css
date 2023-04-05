@@ -1,0 +1,41 @@
+body
+{
+    background-color: darkslategrey;
+}
+
+.divSection
+{
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+select
+{
+    width: 150px;
+}
+
+#pasajeros
+{
+    width: 100px;
+    background-color: white;
+    border-color: whitesmoke;
+}
+
+.pasajerosButton
+{
+    width: 25px;
+    border-color: whitesmoke;
+}
+
+#precio
+{
+    background-color: white;
+    width: 120px;
+    border-color: whitesmoke;
+}
+
+#comprar
+{
+    width: 100px;
+    height: 35px;
+}
