@@ -8,7 +8,8 @@ header {
     justify-content: space-between;
     background-color: black;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
 }
 
 .logo img{
