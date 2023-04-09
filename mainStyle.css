@@ -1,6 +1,8 @@
 body
 {
     background-color: darkslategrey;
+    position: relative;
+    padding-bottom: 262px;
 }
 
 .divSection
