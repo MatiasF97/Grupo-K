@@ -179,3 +179,33 @@ comprar.addEventListener('click', function(){
 })
 //Comprar END
 //Pagina de comprar viaje END
+
+//Página de Contacto
+let nombre = document.getElementById('nombre');
+let apellido = document.querySelector('#apellido');
+let email = document.querySelector('#email');
+let dni = document.querySelector('#dni');
+let telefono = document.querySelector('#telefono');
+let comentario = document.querySelector('#comentario');
+let submit = document.querySelector('#submit');
+
+/*
+submit.addEventListener('OnClick', () => {
+    console.log('todavía no');
+    if ((nombre.value != '') && (apellido.value != '') && (email.value != '') && (dni.value != '') && (telefono.value != '') && (comentario.value != ''))
+    {
+        console.log('entro');
+        alert('Se envío la información, pronto recibiras noticias');
+    }
+});
+*/
+function test()
+{
+    console.log('todavía no');
+    if ((nombre.value != '') && (apellido.value != '') && (email.value != '') && (dni.value != '') && (telefono.value != '') && (comentario.value != ''))
+    {
+        console.log('entro');
+        alert('Se envío la información, pronto recibiras noticias');
+    }
+}
+//Página de Contacto END
