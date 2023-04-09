@@ -8,3 +8,10 @@ body
     background-color: lightgray;
     border-radius: 25px;
 }
+
+#submit
+{
+    width: 10%;
+    background-color: green;
+    color: white;
+}
