@@ -162,15 +162,20 @@ restar.addEventListener('click',function(){
 //Comprar
 let comprar = document.querySelector('#comprar');
 comprar.addEventListener('click', function(){
-    let origen = document.querySelector('#origen').selectedIndex;
-    let destino = document.querySelector('#destino').selectedIndex;
+    let origen = document.querySelector('#origen');
+    let destino = document.querySelector('#destino');
     let fechaIda = document.querySelector('#fechaIda');
     let pasajeros = document.querySelector('#pasajeros');
     let precioTotal = document.querySelector('#precio');
     
-    if ((origen != 0) && (destino != 0) && (fechaIda.value != 0) && (pasajeros.value != 0) && (precioTotal.value != 0))
+    if ((origen.selectedIndex != 0) && (destino.selectedIndex != 0) && (fechaIda.value != 0) && (pasajeros.value != 0) && (precioTotal.value != 0))
     {
-        alert('Su compra se proceso correctamente');
+        alert(`Su compra se proceso correctamente, sus datos son los siguientes:\nOrigen: ${origen.value}\nDestino: ${destino.value}\nFecha: ${fechaIda.value}\nPasajes: ${pasajeros.value}\nPrecio: ${precioTotal.value}`);
+        origen.selectedIndex = 0;
+        destino.selectedIndex = 0;
+        fechaIda.value = 0;
+        pasajeros.value = 0;
+        precioTotal.value = 0;
     }
     else
     {
@@ -189,16 +194,7 @@ let telefono = document.querySelector('#telefono');
 let comentario = document.querySelector('#comentario');
 let submit = document.querySelector('#submit');
 
-/*
-submit.addEventListener('OnClick', () => {
-    console.log('todavía no');
-    if ((nombre.value != '') && (apellido.value != '') && (email.value != '') && (dni.value != '') && (telefono.value != '') && (comentario.value != ''))
-    {
-        console.log('entro');
-        alert('Se envío la información, pronto recibiras noticias');
-    }
-});
-*/
+
 function test()
 {
     console.log('todavía no');
